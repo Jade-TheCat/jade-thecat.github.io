@@ -3,14 +3,14 @@
     background-color: #333333;
     color: white;
 }
+html {
+    font-size: calc(1em+1vw);
+}
 
 body {
     height: 100%;
-    font-size: 40pt;
+    font-size: 3em;
     text-align: center;
-}
-h1 {
-    font-size: 40pt;
 }
 
 div {
@@ -23,5 +23,4 @@ div {
 
 span {
     font-family: monospace;
-    font-size: 72pt;
 }
