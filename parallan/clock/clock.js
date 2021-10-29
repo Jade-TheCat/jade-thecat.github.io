@@ -36,7 +36,7 @@ function loaded() {
     for (var i = 1; i <= (panva % 3 == 0 ? 10 : 9); i++) {
         if (tmp_plf <= 21) {
             cililau = i == 10 ? 'I' : i
-            lau = Math.floor(tmp_plf)
+            lau = Math.ceil(tmp_plf)
             break
         }
         tmp_plf -= 21
