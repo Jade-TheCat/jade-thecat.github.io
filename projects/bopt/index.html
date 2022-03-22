@@ -19,13 +19,23 @@
     <meta name="theme-color" content="#9C43F4"/>
   </head>
   <body>
-    <div class="navbar">
+    <header>
       <a href="./../../">Home</a>
       <a href="https://github.com/Jade-TheCat/jade-thecat.github.io">Repository</a>
       <a href="./../../social/">Links & Usernames</a>
-      <a href="./../../minecraft/">Minecraft Mods</a>
-      <a href="./../">Projects</a>
-    </div>
+      <div class="dropdown">
+        <a href="./../../minecraft/">Minecraft Mods</a>
+        <div class="dropdown-content">
+          <a href="https://www.curseforge.com/minecraft/mc-mods/humans">Humans</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="./../">Projects</a>
+        <div class="dropdown-content">
+          <a href="#" class="active">BOPT</a>
+        </div>
+      </div>
+    </header>
     <main>
         <p><img width='256px' alt='BOPT Logo' src="./../../img/BOPT4x.png"/></p>
         <h1>Binary Object Protocol for Transport (BOPT)</h1>

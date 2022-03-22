@@ -61,7 +61,7 @@ footer {
   text-align: center;
 }
 
-.navbar {
+header {
   display: flex;
   position: static;
   justify-items: flex-start;
@@ -75,7 +75,7 @@ footer {
   left: 0;
 }
 
-.navbar a {
+header a {
   color: rgb(245, 245, 245);
   background-color: rgb(0, 0, 0);
   display: inline-flex;
@@ -85,12 +85,29 @@ footer {
   overflow-wrap: normal;
 }
 
-.navbar a:hover {
+header a:hover {
   color: rgb(252, 153, 242);
 }
 
-.navbar a.active {
+header a.active {
   color: rgb(252, 153, 242);
+}
+
+div.dropdown {
+  position: relative;
+  display:inline-block;
+}
+
+div.dropdown > div.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgb(0, 0, 0);
+  padding: 10px;
+  z-index: 1;
+}
+
+div.dropdown:hover > div.dropdown-content {
+  display: block;
 }
 
 .socials {
@@ -98,7 +115,5 @@ footer {
 }
 
 .socials a {
-  color: rgb(245, 245, 245);
   font-weight: bold;
-  text-decoration: none;
 }
