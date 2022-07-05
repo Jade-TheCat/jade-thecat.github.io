@@ -27,8 +27,8 @@ function loaded() {
     var days_diff = (currentDate.valueOf() - epoch.valueOf()) / (1000*60*60*24)
     var laul_diff = days_diff/2.2552832166666666666666666666666666666666666666666666666666666666
     var panva_laul = 179.666666666667
-    var panva = 20000+Math.floor(laul_diff/panva_laul)
-    var panva_lau_frac = laul_diff-(panva_laul*(panva-20000))+1
+    var panva = 25000+Math.floor(laul_diff/panva_laul)
+    var panva_lau_frac = laul_diff-(panva_laul*(panva-25000))+1
     
     let cililau
     let lau
