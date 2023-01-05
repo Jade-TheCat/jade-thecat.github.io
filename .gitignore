@@ -1,1 +1,10 @@
+### VSCode ###
 .vscode
+
+### Jekyll ###
+Gemfile.lock
+_site/
+_tmp/
+.jekyll-metadata
+*-cache/
+.frontmatter/
