@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="utf-W8">
+    <title>{{page.title}} | JadeTheCat</title>
+    <meta name="description" content="JadeTheCat: Main page" />
+    <meta name="keywords" content="jadethecat" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/style/main.css">
+    <script src="/assets/js/theming.js"></script>
+    <script src="/assets/js/dropdown.js"></script>
+
+    <!--Card Meta Tags-->
+    <meta property="og:title" content="JadeTheCat.dev: Home of the Jadecat"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jadethecat.dev"/>
+    <meta property="og:image" content="https://jadethecat.dev/img/JTC-Basalt.png"/>
+    <meta property="og:description" content="Just a transcat making new things"/>
+    <meta name="theme-color" content="#9C43F4"/>
+</head>
+<body>
+    <header>
+        <img src="/assets/img/JTC Marble.svg" alt="Small JTC Logo">
+        <a href="/">Home</a>
+        <a href="https://github.com/Jade-TheCat/jade-thecat.github.io">Repository</a>
+        <a href="/social/">Links & Usernames</a>
+        <div class="dropdown">
+            <button onclick="dropdown('minecraft-dropdown')" class="dropbtn">Minecraft</button>
+            <div class="dropdown-content" id="minecraft-dropdown">
+                <a href="/minecraft/">Minecraft Mods</a>
+                <a href="https://www.curseforge.com/minecraft/mc-mods/humans">Humans</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button onclick="dropdown('projects-dropdown')" class="dropbtn">Projects</button>
+            <div class="dropdown-content" id="projects-dropdown">
+                <a href="/projects/">Projects Page</a>
+                <a href="/projects/bopt/">BOPT</a>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div>
+            <label for="color-scheme">Color Scheme</label>
+            <select id="color-scheme" name="color-scheme">
+                <option value="jtc-scheme-rose-quartz" class="rose-quartz" selected>Rose Quartz</option>
+                <option value="jtc-scheme-ruby" class="ruby">Ruby</option>
+                <option value="jtc-scheme-amber" class="amber">Amber</option>
+                <option value="jtc-scheme-sulphur" class="sulphur">Sulphur</option>
+                <option value="jtc-scheme-emerald" class="emerald">Emerald</option>
+                <option value="jtc-scheme-jade" class="jade">Jade</option>
+                <option value="jtc-scheme-amethyst" class="amethyst">Amethyst</option>
+                <option value="jtc-scheme-sapphire" class="sapphire">Sapphire</option>
+                <option value="jtc-scheme-turquoise" class="turquoise">Turquoise</option>
+            </select>
+        </div>
+        <div class="dropdown right-align">
+            <button onclick="dropdown('settings-dropdown')" class="dropbtn">Site Settings</button>
+            <div class="dropdown-content" id="settings-dropdown">
+                <form>
+                    <input type="checkbox" id="accessible-font" name="accessible-font" class="in-dropdown">
+                    <label for="accessible-font" class="in-dropdown">Accessible Font</label><br>
+                    <input type="checkbox" name="accessible-colors" id="accessible-colors" class="in-dropdown">
+                    <label for="accessible-colors">Accessible Colors</label><br>
+                    <input type="checkbox" name="theme" id="theme"class="in-dropdown">
+                    <label for="theme"class="in-dropdown">Light Theme</label>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+	<footer>
+		&copy; Jade Krabbe 2019-{{ 'now' | date: "%Y" }}.
+	</footer>
+</body>
+</html>
+
